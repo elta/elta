@@ -9,9 +9,9 @@ tags: [qemu, macos]
 
 在 Mac 上编译 QEMU 时，发现无法链接 pthread 库。经过搜索，在 stackoverflow 上找到了以下解决方法：
 
-clang requires -pthread when compiling but not when linking. This is annoying, but it is observed behavior:
+> clang requires -pthread when compiling but not when linking. This is annoying, but it is observed behavior:
 
-```
+> ```
 $ clang -c x.cpp
 $ clang -pthread -c x.cpp
 $ clang -o x x.o
@@ -34,3 +34,7 @@ export CLFAGS+=" -lpthread "
 ```
 
 之后进行编译，顺利通过。
+
+参考文献：
+
+[Stack Overflow](http://stackoverflow.com/questions/17841140/os-x-clang-pthread)
