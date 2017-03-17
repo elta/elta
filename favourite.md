@@ -31,6 +31,7 @@ title: 我的收藏
 1. [POSIX 标准](https://wapbaike.baidu.com/item/POSIX/3792413?adapt=1&fr=aladdin)
 2. [dotguide.pdf](http://www.graphviz.org/pdf/dotguide.pdf)
 3. [dot 学习笔记](http://liyanrui.is-programmer.com/posts/6261.html)
+4. [开源项目新闻](https://lwn.net)
 
 
 #### 交叉编程
@@ -56,7 +57,7 @@ title: 我的收藏
 #### QEMU
 
 1. [QEMU - 韦任的 Wiki 百科](http://people.cs.nctu.edu.tw/~chenwj/dokuwiki/doku.php?id=qemu)
-TO BE CONTINUE
+2. [MTTCG QEMU](https://lwn.net/Articles/697265/?utm_source=tuicool&utm_medium=referral)
 
 ### 机器学习（人工智能）
 
