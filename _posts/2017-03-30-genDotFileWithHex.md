@@ -26,44 +26,44 @@ lines = file.readlines()
 
 def isFuncName(line=""):
     if line.__contains__(">:"):
-		return True
-	else:
-		return False
+        return True
+    else:
+        return False
 
 def isJalName(line=""):
     if line.__contains__("jal"):
-		return True
-	else:
-		return False
+        return True
+    else:
+        return False
 
 def getFuncName(line=""):
     left = line.find("<")
-	right = line.find(">") + 1
+    right = line.find(">") + 1
 
-	if right <= left:
-		return ""
-	else:
-		return line[left:right]
+    if right <= left:
+        return ""
+    else:
+        return line[left:right]
 
 def genDotFile(lst=list()):
     print "digraph graphic {"
-	for l in lst:
-		print "    " + l.keys()[0] + " -> " + l.values()[0] + ";"
-	print "}"
+    for l in lst:
+        print "    " + l.keys()[0] + " -> " + l.values()[0] + ";"
+    print "}"
 
 funcName = ""
 targetName = ""
 lst = list()
 
 for line in lines:
-	if isFuncName(line):
-		funcName = getFuncName(line)
-	elif isJalName(line):
-	    targetName = getFuncName(line)
+    if isFuncName(line):
+        funcName = getFuncName(line)
+    elif isJalName(line):
+        targetName = getFuncName(line)
 
-		if targetName != "":
-			if {funcName: targetName} not in lst:
-				lst.append({funcName: targetName})
+        if targetName != "":
+            if {funcName: targetName} not in lst:
+                lst.append({funcName: targetName})
 
 genDotFile(lst)
 
