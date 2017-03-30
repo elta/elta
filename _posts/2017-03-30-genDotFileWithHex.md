@@ -47,6 +47,7 @@ def getFuncName(line=""):
 
 def genDotFile(lst=list()):
     print "digraph graphic {"
+    print "    rankdir = LR"
     for l in lst:
         print "    " + l.keys()[0] + " -> " + l.values()[0] + ";"
     print "}"
