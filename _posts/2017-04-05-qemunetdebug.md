@@ -23,6 +23,6 @@ QEMU 是一个行为级模拟器，公司在使用 QEMU 作为模拟器进行软
 
 由此确认，模拟器的网卡没有正确实现对 GSO 的支持。进入模拟器，在数据包发送函数中进行修改，支持 GSO。完成后，ftp 操作能够正常执行成功了。
 
-</br>
+
 <b>参考文献：</b>  
 [linux内核网络协议栈学习笔记：关于GRO/GSO/LRO/TSO等patch的分析和测试](http://blog.csdn.net/majieyue/article/details/7929398)
