@@ -70,3 +70,7 @@ title: 我的收藏
 
 #### JDK
 [JDK 8 for MAC](https://pan.baidu.com/s/1jH70nOU)
+
+#### 电子书
+1. [Library Genesis](http://gen.lib.rus.ec)
+2. [Is Parallel Programming Hard, And, If So, What Can You Do About It?](https://www.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.html)
