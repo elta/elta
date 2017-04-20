@@ -43,6 +43,9 @@ title: 我的收藏
 1. [互斥锁和信号量](http://transcoder.baidu.com/from=1012704v/bd_page_type=1/ssid=0/uid=0/pu=usm%400%2Csz%40224_220%2Cta%40iphone___3_602/baiduid=9399FB0417221727213329676A18A752/w=0_10_/t=iphone/l=3/tc?ref=www_iphone&lid=9234323827872621352&order=1&fm=alop&srd=1&dict=32&h5ad=1&tj=www_normal_1_0_10_title&url_mf_score=3&vit=osres&m=8&cltj=cloud_title&asres=1&nt=wnor&title=线程同步%28互斥锁与信号量的作用与区别%29-bbaiggey_...&w_qd=IlPT2AEptyoA_yky6h5a9wexDydVb7Taok6jsxeVawtPGRZN4ywepXax7xUUtsJypxkJQtNGBZSv2Qkluh7x5_&sec=18178&di=cf92ee85ab47c187&bdenc=1&nsrc=IlPT2AEptyoA_yixCFOxXnANedT62v3IJBaOMmBXATq5953ybrWxBdRcYzbsN8q4ZpPPxXCKe1xRdWGdWTJznMESgO66sVsa7XThdvruh_)
 2. [pthread_mutex_init等多线程函数的使用总结](http://m.blog.csdn.net/article/details?id=52577681#_motz_)
 
+#### 调试器
+1. [调试器工作原理(GDB)](http://eli.thegreenplace.net/tag/debuggers)
+
 #### Filesystem
 
 1. [CLFS](http://clfs.org/view/git/mips64-64/)
@@ -74,3 +77,4 @@ title: 我的收藏
 #### 电子书
 1. [Library Genesis](http://gen.lib.rus.ec)
 2. [Is Parallel Programming Hard, And, If So, What Can You Do About It?](https://www.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.html)
+3. [互联网的快照——archive.org](archive.org)
