@@ -46,6 +46,9 @@ title: 我的收藏
 #### 调试器
 1. [调试器工作原理(GDB)](http://eli.thegreenplace.net/tag/debuggers)
 
+#### 汇编器手册
+1. [GAS手册（GNU AS）](https://sourceware.org/binutils/docs-2.28/as/index.html)
+
 #### Filesystem
 
 1. [CLFS](http://clfs.org/view/git/mips64-64/)
