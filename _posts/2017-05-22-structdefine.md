@@ -83,3 +83,15 @@ if (thingX & TYPEA) {
     printf("thingX belong to TYPEC");
 }
 ```
+
+在开发后期，可能会出现新的分类方式，对原有类型进行了分离。例如：TYPEA 分离成 TYPED 和 TYPEF，修改信息如下：
+
+```
+#define TYPED (0x01UL << 4)
+#define TYPEF (0x01UL << 5)
+#define TYPEA (TYPED | TYPEF)
+```
+
+通过对 TYPEA 的分离，原有 TYPEA 的逻辑并不需要进行更新，TYPED 和 TYPEF 相关的新逻辑添加就可以了。
+
+这种情况下，原有类型 fooA 相关代码不需要进行更新，而新类型 fooX 可以添加 TYPED 和 TYPEF 的操作。
