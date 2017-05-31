@@ -33,6 +33,9 @@ title: 我的收藏
 3. [dot 学习笔记](http://liyanrui.is-programmer.com/posts/6261.html)
 4. [开源项目新闻](https://lwn.net)
 
+#### 函数实现
+1. [定点浮点转换 int2float](https://locklessinc.com/articles/i2f/)
+
 
 #### 交叉编程
 

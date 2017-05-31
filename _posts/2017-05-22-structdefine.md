@@ -23,7 +23,7 @@ typedef struct foo_t {
    uint64_t group1;
    uint64_t group2;
    ...
-} foo_t
+} foo_t;
 ```
 
 在定义具体类型时，我们可以进行具体物体分类的实现：
