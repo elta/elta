@@ -67,6 +67,7 @@ title: 我的收藏
 
 1. [QEMU - 韦任的 Wiki 百科](http://people.cs.nctu.edu.tw/~chenwj/dokuwiki/doku.php?id=qemu)
 2. [MTTCG QEMU](https://lwn.net/Articles/697265/?utm_source=tuicool&utm_medium=referral)
+3. [How to run Linux SMP in QEMU on a MIPS64 Release 6 CPU](http://www.tuicool.com/articles/hit/yAFRvea)
 
 ### 机器学习（人工智能）
 
