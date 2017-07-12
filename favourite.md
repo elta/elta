@@ -5,6 +5,9 @@ title: 我的收藏
 ## 我的收藏
 这里是我收藏的各种资料
 
+### 搜索
+
+1. [文件搜索 Filewatcher](http://www.filewatcher.com)
 
 ### iOS
 
@@ -56,6 +59,10 @@ title: 我的收藏
 
 1. [CLFS](http://clfs.org/view/git/mips64-64/)
 
+#### 性能优化
+
+1. [Performance tuning 的定义](https://en.m.wikipedia.org/wiki/Performance_tuning)
+
 
 ### 模拟器
 
@@ -70,6 +77,11 @@ title: 我的收藏
 3. [How to run Linux SMP in QEMU on a MIPS64 Release 6 CPU](http://www.tuicool.com/articles/hit/yAFRvea)
 
 ### 机器学习（人工智能）
+
+#### 深度学习
+
+1. [深度学习电子书](https://github.com/exacity/deeplearningbook-chinese)
+2. 
 
 #### TensorFlow
 
@@ -89,3 +101,8 @@ title: 我的收藏
 2. [Is Parallel Programming Hard, And, If So, What Can You Do About It?](https://www.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.html)
 3. [互联网的快照——archive.org](archive.org)
 4. [The Linux Doc Project](http://www.tldp.org)
+5. [GitBook](https://www.gitbook.com/explore?page=1&lang=zh)
+
+### 游戏娱乐
+
+1. [王者荣耀攻略，ZhiMap](https://zhimap.com/mmap/b9b37747f15a43e08deeea54d4d4f171)
