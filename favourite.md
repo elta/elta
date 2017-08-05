@@ -8,6 +8,8 @@ title: 我的收藏
 ### 搜索
 
 1. [文件搜索 Filewatcher](http://www.filewatcher.com)
+2. [科学论文](http://www.sciencedirect.com)
+3. [IBM developer works](https://www.ibm.com/developerworks/cn/)
 
 ### iOS
 
