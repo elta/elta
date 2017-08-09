@@ -104,6 +104,7 @@ title: 我的收藏
 3. [互联网的快照——archive.org](archive.org)
 4. [The Linux Doc Project](http://www.tldp.org)
 5. [GitBook](https://www.gitbook.com/explore?page=1&lang=zh)
+6. [Linux 公社](http://linux.linuxidc.com/index.php)
 
 ### 游戏娱乐
 
