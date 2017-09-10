@@ -24,7 +24,7 @@ curl -LsSf http://github.com/mxcl/homebrew/tarball/master | tar xvz -C~/opt/brew
 安装完成 brew 后，为了能够在命令行中使用 brew 命令，需要将其加入系统 PATH 中:
 
 ```
-echo "PATH=$PATH:~/opt/brew/bin" >> ~/.bashrc
+echo "PATH=$PATH:${HOME}/opt/brew/bin" >> ~/.bashrc
 ```
 
 ### 2. 更新 brew
