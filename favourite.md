@@ -11,6 +11,7 @@ title: 我的收藏
 2. [科学论文](http://www.sciencedirect.com)
 3. [IBM developer works](https://www.ibm.com/developerworks/cn/)
 
+
 ### iOS
 
 #### 越狱
@@ -24,6 +25,7 @@ title: 我的收藏
 6. [iOS 安全攻防](http://www.cnblogs.com/jailbreaker/category/636650.html)
 7. [蒸米spark: 冰与火之歌](https://github.com/zhengmin1989/iOS_ICE_AND_FIRE)
 8. [ideviceinstaller](https://github.com/libimobiledevice/ideviceinstaller.git)
+9. [IOS工具下载](http://apt.saurik.com/debs/)
 
 #### 源码
 

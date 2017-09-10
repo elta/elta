@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "Tools"
+category: "Tools,mac"
 description: "在 macos 上安装 homebrew 的方法，用于将 homebrew 安装到用户目录下"
 title:  "MacOS 安装 brew"
 date: 2017-01-16 13:35:20+00:00
@@ -14,12 +14,21 @@ Mac 系统上安装软件时，也可以使用像 ubuntu 一样的 apt-get 工�
 安装 brew 的步骤如下：
 
 ### 1. 将 brew 安装到用户目录下
+
 ```
 curl -LsSf http://github.com/mxcl/homebrew/tarball/master | tar xvz -C~/opt/brew --strip 1
 ```
+
 注意：~/opt/brew 是用户目录下的文件夹，大家安装的时候可以自己根据实际情况进行修改。
 
+安装完成 brew 后，为了能够在命令行中使用 brew 命令，需要将其加入系统 PATH 中:
+
+```
+echo "PATH=$PATH:~/opt/brew/bin" >> ~/.bashrc
+```
+
 ### 2. 更新 brew
+
 ```
 brew update
 brew update
