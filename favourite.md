@@ -10,6 +10,7 @@ title: 我的收藏
 1. [文件搜索 Filewatcher](http://www.filewatcher.com)
 2. [科学论文](http://www.sciencedirect.com)
 3. [IBM developer works](https://www.ibm.com/developerworks/cn/)
+4. [文集出版商搜索](http://bilge.isikun.edu.tr/client/zh_CN/default/?ic=true)
 
 
 ### iOS
