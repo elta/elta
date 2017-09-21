@@ -11,6 +11,7 @@ title: 我的收藏
 2. [科学论文](http://www.sciencedirect.com)
 3. [IBM developer works](https://www.ibm.com/developerworks/cn/)
 4. [文集出版商搜索](http://bilge.isikun.edu.tr/client/zh_CN/default/?ic=true)
+5. [免费论文下载](https://sci-hub.io)
 
 
 ### iOS
