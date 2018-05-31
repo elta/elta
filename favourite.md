@@ -12,6 +12,8 @@ title: 我的收藏
 3. [IBM developer works](https://www.ibm.com/developerworks/cn/)
 4. [文集出版商搜索](http://bilge.isikun.edu.tr/client/zh_CN/default/?ic=true)
 5. [免费论文下载](https://sci-hub.io)
+6. [datasheet下载(alldatasheet)](http://www.alldatasheet.com/)
+7. [datasheet下载(datasheet5)](http://www.datasheet5.com)
 
 
 ### iOS
