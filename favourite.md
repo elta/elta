@@ -14,6 +14,7 @@ title: 我的收藏
 5. [免费论文下载](https://sci-hub.io)
 6. [datasheet下载(alldatasheet)](http://www.alldatasheet.com/)
 7. [datasheet下载(datasheet5)](http://www.datasheet5.com)
+8. [商虎（展会搜索）](http://cn.sonhoo.com)
 
 
 ### iOS
