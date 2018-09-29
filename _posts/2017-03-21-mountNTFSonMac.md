@@ -1,8 +1,8 @@
 ---
 layout: post
 category: "mac"
-description: "在 Mac 上挂在 NTFS 格式的磁盘"
-title:  "在 Mac 上挂在 NTFS 格式的磁盘"
+description: "在 Mac 上挂载 NTFS 格式的磁盘"
+title:  "在 Mac 上挂载 NTFS 格式的磁盘"
 date: 2017-03-21 15:38:38+00:00
 tags: [mac,ntfs]
 ---
