@@ -9,6 +9,10 @@ tags: [mac,buildroot]
 
 之前有听说过docker，但是一直没有使用过。最近终于下定决定使用了一下docker，感觉docker用于跨操作系统的软件工具使用还是比较友好的。
 
+# 适用人群
+
+本文忽略的部分Linux软件包安装的过程，需要读者有一定Linux操作基础，具有软件包查找与安装能力。
+
 # Docker的基本用法
 
 在使用docker时，首先需要安装docker。安装完成后，通过从dockerhub上下载不同系统环境的image，然后运行相应的image，完成docker的运行操作。
@@ -121,13 +125,72 @@ docker run -it myubuntu_1804:v0.1
 
 新增卷宗时，将磁盘格式设置为“APFS区分大小写”，即可创建出一个新的区分大小写的卷宗。至此，MacOS上的磁盘准备工作就绪。
 
-# 编译buildroot
+# 编译Buildroot
 
+Buildroot是一个Linux平台上快速构建嵌入式Linux系统的框架，它可以使用menuconfig进行配置，实现快速构建Linux工具链、rootfs等环境的工具。
 
+从Buildroot的官方网站上可以下载到Buildroot的源码包，网址在：https://buildroot.org/download.html。下载完成后进行解压缩，即可得到Buildroot的工作目录。
+
+在该目录中，存在configs目录，其中包含了默认的config信息，可以通过默认配置快速实现构建。
+
+下文中，将使用"qemu_mips64el_malta_defconfig"作为默认配置，来说明Buildroot的基本使用方法。
 
 ## Docker共享磁盘
 
+为了能够在docker内部使用Buildroot，可以通过使用共享磁盘的形式将Buildroot挂载到docker内部，而不用将Buildroot放在容器的文件系统内部。这样能够很方便的保留Buildroot的编译结果，而不用通过保存container的形式去保存变更。
+
+由于使用了共享磁盘作为Buildroot的存储环境，所以需要注意的是：
+
+**该磁盘必须是区分大小写的，！！否则部分软件包编译会报错！！**
+
+**该磁盘必须是区分大小写的，！！否则部分软件包编译会报错！！**
+
+**该磁盘必须是区分大小写的，！！否则部分软件包编译会报错！！**
+
+可以通过以下命令将共享目录挂载到container内部：
+
+```
+docker run -it -v ${PWD}:/dockershare myubuntu_1804:v0.1
+```
+
+上述命令中，${PWD}指的是当前目录（全路径），"/dockershare"指的是container内部可以看到的共享目录路径（全路径）。上述命令执行完成后，即可将当前目录挂载到docker container内部，也可以通过将${PWD}替换成其他全路径，实现指定路径的挂载。
+
+需要注意的是，外部路径一定是存储了Buildroot的路径，并且该路径中可以存放区分大小写的文件。
+
+## 配置
+
+通过加载共享磁盘的方式进入容器后，可以进入"/dockershare/buildroot-2019.05”路径（本文下载的是2019.05版本的Buildroot），在该路径中，可以通过直接调用defconfig的形式进行快速配置，如：
+
+```
+make qemu_mips64el_malta_defconfig
+```
+
+配置完成后，需要调整部分选项信息，则可以通过"make menuconfig"进入菜单，进行修改。
+
+这里可以将默认的软件包下载仓库调整为Buildroot的备份仓库，这样可以加快下载速度，避免部分软件包无法下载的情况。调整的配置路径如下：
+
+```
+ Symbol: BR2_PRIMARY_SITE [=http://sources.buildroot.net]                │  
+  │ Type  : string                                                          │  
+  │ Prompt: Primary download site                                           │  
+  │   Location:                                                             │  
+  │     -> Build options                                                    │  
+  │       -> Mirrors and Download locations
+  
+将该值设置为“http://sources.buildroot.net”
+```
+
+修改完配置后，即可通过ecs进行后退，到最后一层退出时提示保存配置信息，保存即可。
+
 ## 编译
 
+在配置完成后，即可进入编译步骤。编译命令如下：
 
+```
+make source # 提前将软件包全部下载，可省略
+make        # 进行编译
+```
 
+上述编译步骤中，"make source"是可以省略的。但是通过“make source”可以将编译所需的全部软件包进行下载，后续进行编译即可，减少了编译过程中由于软件包无法下载导致的编译暂停。“make source”可以不执行，这样在编译的过程中，需要编译某个软件包时再下载，也是可以的。
+
+Buildroot可以“make”命令完成编译，编译完成后，在output目录下存放着编译结果。
