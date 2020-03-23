@@ -37,3 +37,23 @@ gdb 和 binutils 是两个独立的项目，但是他们的 git 仓库却是同�
 ```
 ../configure --prefix=${PWD}/_install --disable-gdb
 ```
+
+# 打包Release
+
+## Release GDB
+
+```
+src-release.sh gdb
+```
+
+## Release Binutils
+
+```
+src-release.sh binutils
+```
+
+## 其它
+
+```
+src-release.sh [ binutils | gas | gdb | sim ]
+```
