@@ -61,6 +61,9 @@ title: 我的收藏
 #### 调试器
 1. [调试器工作原理(GDB)](http://eli.thegreenplace.net/tag/debuggers)
 
+#### OpenOCD
+1. [OpenOCD开发手册](http://openocd.org/doc-release/doxygen/index.html)
+
 #### 汇编器手册
 1. [GAS手册（GNU AS）](https://sourceware.org/binutils/docs-2.28/as/index.html)
 
@@ -71,6 +74,7 @@ title: 我的收藏
 #### 性能优化
 
 1. [Performance tuning 的定义](https://en.m.wikipedia.org/wiki/Performance_tuning)
+
 
 
 ### 模拟器
